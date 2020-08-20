@@ -12,16 +12,16 @@ def recurse_scale(factor, element):
     """Scale down coordinated atts of element and its descendants"""
     if element.hasAttribute('ulx'):
         ulx = element.getAttribute('ulx')
-        ulx.setValue(str(int(ulx.getValue()) * factor))
+        ulx.setValue(str(int(int(ulx.getValue()) * factor)))
     if element.hasAttribute('uly'):
         uly = element.getAttribute('uly')
-        uly.setValue(str(int(uly.getValue()) * factor))
+        uly.setValue(str(int(int(uly.getValue()) * factor)))
     if element.hasAttribute('lrx'):
         lrx = element.getAttribute('lrx')
-        lrx.setValue(str(int(lrx.getValue()) * factor))
+        lrx.setValue(str(int(int(lrx.getValue()) * factor)))
     if element.hasAttribute('lry'):
         lry = element.getAttribute('lry')
-        lry.setValue(str(int(lry.getValue()) * factor))
+        lry.setValue(str((int(lry.getValue()) * factor)))
 
     for child in element.getChildren():
         recurse_scale(factor, child)
