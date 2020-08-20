@@ -3,4 +3,4 @@
 
 
 __version__ = "0.1.0"
-from mei_resize import MeiResize        # noqa
+from mei_resize import MEI_Resize       # noqa
