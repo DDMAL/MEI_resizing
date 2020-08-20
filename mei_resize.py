@@ -11,13 +11,13 @@ def recurse_scale(factor, element):
         ulx.setValue(str(int(ulx.getValue()) * factor))
     if element.hasAttribute('uly'):
         uly = element.getAttribute('uly')
-        uly.setAttribute(str(int(uly.getValue()) * factor))
+        uly.setValue(str(int(uly.getValue()) * factor))
     if element.hasAttribute('lrx'):
         lrx = element.getAttribute('lrx')
-        lrx.setAttribute(str(int(lrx.getValue()) * factor))
+        lrx.setValue(str(int(lrx.getValue()) * factor))
     if element.hasAttribute('lry'):
         lry = element.getAttribute('lry')
-        lry.setAttribute(str(int(lry.getValue()) * factor))
+        lry.setValue(str(int(lry.getValue()) * factor))
 
     for child in element.getChildren():
         recurse_scale(factor, child)
