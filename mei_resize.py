@@ -69,7 +69,7 @@ class MEI_Resize(RodanTask):
     output_port_types = [
         {
             'name': 'MEI',
-            'minmium': 1,
+            'minimum': 1,
             'maximum': 1,
             'resource_types': ['application/mei+xml']
         }
