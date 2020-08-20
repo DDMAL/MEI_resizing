@@ -37,7 +37,7 @@ class MEI_Resize(RodanTask):
     logger = get_task_logger(__name__)
 
     settings = {
-        'job_queue': 'Python3',
+        'job_queue': 'Python2',
         'type': 'object',
         'title': 'Settings',
         'properties': {
