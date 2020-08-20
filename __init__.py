@@ -3,4 +3,5 @@
 
 
 __version__ = "0.1.0"
-from mei_resize import MEI_Resize       # noqa
+from rodan.jobs import module_loader
+module_loader('rodan.jobs.MEI_resizing.mei_resize')
