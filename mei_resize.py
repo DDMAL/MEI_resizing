@@ -21,7 +21,7 @@ def recurse_scale(factor, element):
         lrx.setValue(str(int(int(lrx.getValue()) * factor)))
     if element.hasAttribute('lry'):
         lry = element.getAttribute('lry')
-        lry.setValue(str(int(int(lry.getValue()) * factor)))
+        lry.setValue(str((int(lry.getValue()) * factor)))
 
     for child in element.getChildren():
         recurse_scale(factor, child)
